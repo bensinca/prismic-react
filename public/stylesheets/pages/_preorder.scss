@@ -1,0 +1,21 @@
+.pre-order-iframe{
+    width: 100%;
+    overflow: hidden;
+    height: 1000px;
+}
+
+.iframe-container{
+    width: 768px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.iframe-container::after {
+    content: "";
+    background: #ecedf3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 60px;
+    bottom: 0;
+}
