@@ -6,7 +6,7 @@ import { Icon } from '..'
 
 const AccordionItem = ({ active, title, text, onClick, ...props }) => {
   return (
-    <Box {...props}>
+    <Box {...props} className="accordion-item">
       <Box>
         <Box data-accordion-heading>
           <Box
@@ -19,10 +19,10 @@ const AccordionItem = ({ active, title, text, onClick, ...props }) => {
               fontWeight: '500',
               width: '100%',
               height: '100%',
-              backgroundColor: 'secondary',
+              backgroundColor: '#353535',
               textAlign: 'left',
               lineHeight: '1.2',
-              padding: 'cPadding',
+              padding: '10px',
               paddingRight: '80px',
               position: 'relative',
               border: '1px solid transparent',
@@ -73,7 +73,7 @@ const AccordionItem = ({ active, title, text, onClick, ...props }) => {
               backgroundColor: 'secondary',
               borderRadius: '0 0 8px 8px',
               padding: 'cPadding',
-              paddingRight: '4rem',
+              paddingTop: '10px',
               marginBottom: active ? '0' : 'cPadding',
             }}
           >

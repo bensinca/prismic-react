@@ -9,7 +9,7 @@ import { client } from '../utils/prismicHelpers';
  * Blog post page component
  */
 const Post = ({ match }) => {
-  const [prismicDoc, setPrismicDoc] = useState(null);
+  const [prismicData, setprismicData] = useState({ doc: null, menuDoc: null });
   const [notFound, toggleNotFound] = useState(false);
 
   const uid = match.params.uid;
@@ -19,9 +19,10 @@ const Post = ({ match }) => {
     const fetchPrismicData = async () => {
       try {
         const doc = await client.getByUID('post', uid);
-  
+        const menuDoc = await client.getSingle('menu');
+
         if (doc) {
-          setPrismicDoc(doc);
+          setprismicData({ doc, menuDoc });
         } else {
           console.warn('Blog post document was not found. Make sure it exists in your Prismic repository');
           toggleNotFound(true);
@@ -36,19 +37,20 @@ const Post = ({ match }) => {
   }, [uid]);
 
   // Return the page if a document was retrieved from Prismic
-  if (prismicDoc) {
-    const title =
-      prismicDoc.data.title.length !== 0 ?
-      RichText.asText(prismicDoc.data.title) :
+  if (prismicData.doc) {
+    const doc = prismicData.doc;
+    const title = doc.data.title.length !== 0 ?
+      RichText.asText(doc.data.title) :
       'Untitled';
+      const menuDoc = prismicData.menuDoc;
 
     return (
-      <DefaultLayout wrapperClass="main" seoTitle={title}>
+      <DefaultLayout wrapperClass="main post" seoTitle={title} menuDoc={menuDoc}>
         <div className="outer-container">
           <BackButton />
           <h1>{title}</h1>
         </div>
-        <SliceZone sliceZone={prismicDoc.data.body} />
+        <SliceZone sliceZone={doc.data.body} />
       </DefaultLayout>
     );
   } else if (notFound) {
