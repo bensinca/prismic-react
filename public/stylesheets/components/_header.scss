@@ -50,3 +50,18 @@ nav ul {
         }
     }
 }
+
+//if blog page or page
+.blog-home, .post, .page{
+    .logo{
+        img{
+            filter: invert(0);
+        }
+    }
+    nav ul li a{
+        color: black;
+    }
+    .site-header {
+        position: relative;
+    }
+}

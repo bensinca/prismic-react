@@ -18,12 +18,12 @@ const FaqSection = ({ slice }) => {
   const { items, primary } = slice
 
   return (
-    <Slice sx={{ textAlign: 'center' }}>
+    <Slice className="faq" sx={{ textAlign: 'center' }}>
       <Wrap>
         <Head>
           <Box as="header">
             {primary.eyebrow_headline && (
-              <Eyebrow>
+              <Eyebrow className="eyebrow">
                 <RichText render={primary.eyebrow_headline} />
               </Eyebrow>
             )}

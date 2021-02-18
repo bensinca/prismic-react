@@ -16,7 +16,7 @@ const Footer = () => (
         </div>
     </section>
     <section className="subfooter">
-    Proudly Developed by <a href="https://instagram.com/beni.sinca" target="_blank" rel="noopener noreferrer">Beni Sinca</a> and published with &nbsp;
+    Proudly Developed by <a href="https://instagram.com/benisinca" target="_blank" rel="noopener noreferrer">Beni Sinca</a> and published with &nbsp;
       <a href="https://prismic.io" target="_blank" rel="noopener noreferrer">Prismic</a>
       <br />
     </section>

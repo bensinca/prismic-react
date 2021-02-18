@@ -1,8 +1,10 @@
 .container{
-    padding: 30px;
-    margin: 0 auto;
-    @media all and (min-width: 768px){
-        padding: 75px 0;
+    section{
+        padding: 30px;
+        margin: 0 auto;
+        @media all and (min-width: 768px){
+            padding: 75px 0;
+        }
     }
 }
 
@@ -10,5 +12,16 @@
     .container{
         background: white;
         z-index: 3;
+    }
+}
+
+.page{
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0;
+        @media all and (min-width: 768px){
+            padding: 0 30px;
+        }
     }
 }

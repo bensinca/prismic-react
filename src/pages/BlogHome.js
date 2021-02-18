@@ -10,7 +10,7 @@ import { client } from '../utils/prismicHelpers';
  * Blog homepage component
  */
 const BlogHome = () => {
-  const [prismicData, setPrismicData] = useState({ blogDoc: null, blogPosts: null });
+  const [prismicData, setPrismicData] = useState({ blogDoc: null, blogPosts: null,  menuDoc: null });
   const [notFound, toggleNotFound] = useState(false);
 
   // Get the blog post documents from Prismic
@@ -22,9 +22,10 @@ const BlogHome = () => {
           Prismic.Predicates.at('document.type', 'post'),
           { orderings: '[my.post.date desc]' }
         );
+        const menuDoc = await client.getSingle('menu');
   
         if (blogDoc) {
-          setPrismicData({ blogDoc, blogPosts: blogPosts.results });
+          setPrismicData({ blogDoc, blogPosts: blogPosts.results, menuDoc });
         } else {
           console.warn('Blog Home document was not found. Make sure it exists in your Prismic repository');
           toggleNotFound(true);
@@ -43,11 +44,13 @@ const BlogHome = () => {
     const blogDoc = prismicData.blogDoc;
     const blogPosts = prismicData.blogPosts;
     const title = RichText.asText(blogDoc.data.headline);
+    const menuDoc = prismicData.menuDoc;
 
     return (
       <DefaultLayout
         seoTitle={title}
         wrapperClass="blog-home"
+        menuDoc={menuDoc}
         >
         <BlogHeader
           image={blogDoc.data.image}

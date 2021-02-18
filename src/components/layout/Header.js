@@ -10,7 +10,7 @@ const Header = ({ menuDoc }) => {
   if (menuDoc) {
     return (
       <header className="site-header">
-        <RouterLink to="./">
+        <RouterLink to="/">
           <div className="logo"><img width="200" alt="Instagram" src="/images/logo-2.png" /></div>
         </RouterLink>
         <nav>

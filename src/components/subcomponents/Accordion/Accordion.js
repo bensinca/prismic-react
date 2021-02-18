@@ -15,7 +15,7 @@ const Accordion = ({ children }) => {
       onClick: () => setActive(index === active ? null : index),
     })
   })
-  return <Box>{items}</Box>
+  return <Box className="accordion">{items}</Box>
 }
 
 Accordion.propTypes = {
