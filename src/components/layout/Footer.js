@@ -8,11 +8,10 @@ const Footer = () => (
     <section className="topfooter">
         <div className="column">
           <h2>Jay's Cookies</h2>
-          Fenham, Newcastle<br/>
-          <a href="tel:07477139905">07477139905</a>
+              Newcastle<br/>
         </div>
         <div className="column">
-          <a href="instagram.com"><img alt="Instagram" src="/images/instagram.svg" /></a>
+          <a href="https://www.instagram.com/jayscookies.co.uk/"><img alt="Instagram" src="/images/instagram.svg" /></a>
         </div>
     </section>
     <section className="subfooter">
