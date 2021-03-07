@@ -266,7 +266,7 @@ nav ul li a {
 
 @media all and (min-width: 768px) {
   .logo img {
-    width: 130px;
+    width: 150px;
   }
 }
 
@@ -284,7 +284,7 @@ nav ul li a {
 }
 
 footer {
-  background-color: #444;
+  background-color: #e16d5e;
   padding: 50px 30px;
 }
 
@@ -347,8 +347,11 @@ footer h2 {
 }
 
 .homepage .container {
-  background: white;
+  background: black;
   z-index: 3;
+}
+.homepage .container h1, .homepage .container p, .homepage .container a{
+  color: white;
 }
 
 .page .container {
@@ -369,6 +372,8 @@ section.homepage-banner {
   display: grid;
   place-items: center;
   text-align: center;
+  background-size: cover;
+  background-position: center;
 }
 
 section.homepage-banner .banner-title {
@@ -884,3 +889,44 @@ section.faq .eyebrow p {
   bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
+
+.logo img {
+  animation: rotation 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;  
+}
+.logo img:hover{
+   animation-play-state: paused;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.banner-title{
+  font-size: 5rem;
+  text-shadow: 0 0 0 #e16d5e, 0.0025em 0.0025em 0 #e16d5e, 0.005em 0.005em 0 #e16d5e, 0.0075em 0.0075em 0 #e16d5e, 0.01em 0.01em 0 #e16d5e, 0.0125em 0.0125em 0 #e16d5e, 0.015em 0.015em 0 #e16d5e, 0.0175em 0.0175em 0 #e16d5e, 0.02em 0.02em 0 #e16d5e, 0.0225em 0.0225em 0 #e16d5e, 0.025em 0.025em 0 #e16d5e, 0.0275em 0.0275em 0 #e16d5e, 0.03em 0.03em 0 #e16d5e, 0.0325em 0.0325em 0 #e16d5e, 0.035em 0.035em 0 #e16d5e, 0.0375em 0.0375em 0 #e16d5e, 0.04em 0.04em 0 #e16d5e, 0.0425em 0.0425em 0 #e16d5e, 0.045em 0.045em 0 #e16d5e, 0.0475em 0.0475em 0 #e16d5e, 0.05em 0.05em 0 #e16d5e, 0.0525em 0.0525em 0 #e16d5e, 0.055em 0.055em 0 #e16d5e, 0.0575em 0.0575em 0 #e16d5e, 0.06em 0.06em 0 #e16d5e, 0.0625em 0.0625em 0 #e16d5e, 0.065em 0.065em 0 #ffffff, 0.0675em 0.0675em 0 #ffffff, 0.07em 0.07em 0 #ffffff, 0.0725em 0.0725em 0 #ffffff, 0.075em 0.075em 0 #ffffff, 0.0775em 0.0775em 0 #ffffff, 0.08em 0.08em 0 #ffffff, 0.0825em 0.0825em 0 #ffffff, 0.085em 0.085em 0 #e16d5e, 0.0875em 0.0875em 0 #e16d5e, 0.09em 0.09em 0 #e16d5e, 0.0925em 0.0925em 0 #e16d5e, 0.095em 0.095em 0 #e16d5e, 0.0975em 0.0975em 0 #e16d5e, 0.1em 0.1em 0 #e16d5e;
+}
+
+.pre-order-coming-soon{
+  padding: 100px 0;
+  text-align: center;
+  min-height: 40vh;
+}
+.pre-order-coming-soon h1{
+    text-shadow: 0 0 0 #e16d5e, 0.0025em 0.0025em 0 #e16d5e, 0.005em 0.005em 0 #e16d5e, 0.0075em 0.0075em 0 #e16d5e, 0.01em 0.01em 0 #e16d5e, 0.0125em 0.0125em 0 #e16d5e, 0.015em 0.015em 0 #e16d5e, 0.0175em 0.0175em 0 #e16d5e, 0.02em 0.02em 0 #e16d5e, 0.0225em 0.0225em 0 #e16d5e, 0.025em 0.025em 0 #e16d5e, 0.0275em 0.0275em 0 #e16d5e, 0.03em 0.03em 0 #e16d5e, 0.0325em 0.0325em 0 #e16d5e, 0.035em 0.035em 0 #e16d5e, 0.0375em 0.0375em 0 #e16d5e, 0.04em 0.04em 0 #e16d5e, 0.0425em 0.0425em 0 #e16d5e, 0.045em 0.045em 0 #e16d5e, 0.0475em 0.0475em 0 #e16d5e, 0.05em 0.05em 0 #e16d5e, 0.0525em 0.0525em 0 #e16d5e, 0.055em 0.055em 0 #e16d5e, 0.0575em 0.0575em 0 #e16d5e, 0.06em 0.06em 0 #e16d5e, 0.0625em 0.0625em 0 #e16d5e, 0.065em 0.065em 0 #ffffff, 0.0675em 0.0675em 0 #ffffff, 0.07em 0.07em 0 #ffffff, 0.0725em 0.0725em 0 #ffffff, 0.075em 0.075em 0 #ffffff, 0.0775em 0.0775em 0 #ffffff, 0.08em 0.08em 0 #ffffff, 0.0825em 0.0825em 0 #ffffff, 0.085em 0.085em 0 #e16d5e, 0.0875em 0.0875em 0 #e16d5e, 0.09em 0.09em 0 #e16d5e, 0.0925em 0.0925em 0 #e16d5e, 0.095em 0.095em 0 #e16d5e, 0.0975em 0.0975em 0 #e16d5e, 0.1em 0.1em 0 #e16d5e;
+}
+.homepage-gifs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+}
+.homepage-gifs div{
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100%;
+}

@@ -11,7 +11,7 @@ const Header = ({ menuDoc }) => {
     return (
       <header className="site-header">
         <RouterLink to="/">
-          <div className="logo"><img width="200" alt="Instagram" src="/images/logo-2.png" /></div>
+          <div className="logo"><img width="200" alt="Instagram" src="/images/JCblank.png" /></div>
         </RouterLink>
         <nav>
           <ul>
