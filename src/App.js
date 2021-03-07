@@ -18,7 +18,7 @@ const App = () => {
   return (
     <Fragment>
       <Helmet>
-        <script async defer src={`//static.cdn.prismic.io/prismic.js?repo=${repoName}&new=true`} />
+      
       </Helmet>
       <BrowserRouter>
         <Switch>
