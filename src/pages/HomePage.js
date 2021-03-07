@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { DefaultLayout, HomepageBanner, SliceZone } from '../components';
+import { DefaultLayout, HomepageBanner, Gifs, SliceZone } from '../components';
 import NotFound from './NotFound';
 import { client } from '../utils/prismicHelpers';
 
@@ -44,6 +44,7 @@ const HomePage = () => {
       >
         <HomepageBanner banner={homeDoc.data.homepage_banner[0]} />
         <SliceZone sliceZone={homeDoc.data.page_content} />
+        <Gifs />
       </DefaultLayout>
     );
   } else if (notFound) {
