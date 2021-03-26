@@ -275,10 +275,6 @@ nav ul li a {
           filter: invert(0);
 }
 
-.blog-home nav ul li a, .post nav ul li a, .page nav ul li a {
-  color: black;
-}
-
 .blog-home .site-header, .post .site-header, .page .site-header {
   position: relative;
 }
