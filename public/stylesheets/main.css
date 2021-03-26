@@ -873,14 +873,7 @@ section.faq .eyebrow p {
 .pre-order-iframe {
   width: 100%;
   overflow: hidden;
-  height: 1200px;
-}
-
-
-@media (max-width: 1024px) {
-  .pre-order-iframe{
-    height: 1400px;
-  }
+  height: 1500px;
 }
 
 @media (max-width: 767px) {
