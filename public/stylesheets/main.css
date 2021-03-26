@@ -827,6 +827,9 @@ section.faq .eyebrow p {
   .blog-post-meta, .blog-post-meta {
     font-size: 16px;
   }
+  .preorder .site-header{
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -872,6 +875,21 @@ section.faq .eyebrow p {
   overflow: hidden;
   height: 1200px;
 }
+
+
+@media (max-width: 1024px) {
+  .pre-order-iframe{
+    height: 1400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pre-order-iframe{
+    height: 2500px;
+  }
+}
+
+
 
 .iframe-container {
   width: 768px;
