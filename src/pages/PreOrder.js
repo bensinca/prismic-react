@@ -6,10 +6,10 @@ import { client } from '../utils/prismicHelpers';
 const PreOrder = () => (
   <div>
     <div className="pre-order-coming-soon">
-      <h1>Pre Order For Easter</h1> 
+      <h1>MAYDAY orders coming soon</h1> 
     </div>
       <div className="iframe-container">
-        <iframe
+        {/* <iframe
         id="JotFormIFrame-210834617153351"
         title="Easter Campaign"
         className="pre-order-iframe"
@@ -20,7 +20,7 @@ const PreOrder = () => (
         frameBorder="0"
         scrolling="no"
         >
-        </iframe>
+        </iframe> */}
     </div>
   </div>
 )
