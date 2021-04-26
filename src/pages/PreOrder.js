@@ -8,7 +8,7 @@ const PreOrder = () => (
     <div className="pre-order-coming-soon">
       <h1>MAYDAY orders coming soon</h1> 
     </div>
-      {/* <div className="iframe-container">
+      <div className="iframe-container">
         <iframe
         id="JotFormIFrame-211146167343349"
         title="MAYDAY Campaign"
@@ -21,7 +21,7 @@ const PreOrder = () => (
         scrolling="no"
         >
         </iframe>
-    </div> */}
+    </div>
   </div>
 )
 
