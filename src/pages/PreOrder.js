@@ -6,7 +6,7 @@ import { client } from '../utils/prismicHelpers';
 const PreOrder = () => (
   <div>
     <div className="pre-order-coming-soon">
-      <h1>MAYDAY orders coming soon</h1> 
+      <h1>PreOrder for MAYDAY</h1> 
     </div>
       <div className="iframe-container">
         <iframe
